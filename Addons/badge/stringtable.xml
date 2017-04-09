@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="ECF Insignia">
+    <Package name="ECF">
+        <Container name="Insignia">
+            <Key ID="STR_INSIGNIA_Private">
+                <Original>Private</Original>
+                <English>Private</English>
+                <German>Privat</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_Corporal">
+                <Original>Corporal</Original>
+                <English>Corporal</English>
+                <German>Corporal</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_Sergeant">
+                <Original>Sergeant</Original>
+                <English>Sergeant</English>
+                <German>Sergeant</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_Master_Sergeant">
+                <Original>Master Sergeant</Original>
+                <English>Master Sergeant</English>
+                <German>Master Sergeant</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_Master_Chief">
+                <Original>Master Chief</Original>
+                <English>Master Chief</English>
+                <German>Master Chief</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_War_Chief">
+                <Original>War Chief</Original>
+                <English>War Chief</English>
+                <German>War Chief</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_AT_Sergeant">
+                <Original>Sergeant</Original>
+                <English>Sergeant</English>
+                <German>Sergeant</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_AT_Master_Sergeant">
+                <Original>Master Sergeant</Original>
+                <English>Master Sergeant</English>
+                <German>Master Sergeant</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_AT_Master_Chief">
+                <Original>Master Chief</Original>
+                <English>Master Chief</English>
+                <German>Master Chief</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_AT_War_Chief">
+                <Original>War Chief</Original>
+                <English>War Chief</English>
+                <German>War Chief</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_EOD_Sergeant">
+                <Original>Sergeant</Original>
+                <English>Sergeant</English>
+                <German>Sergeant</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_EOD_Master_Sergeant">
+                <Original>Master Sergeant</Original>
+                <English>Master Sergeant</English>
+                <German>Master Sergeant</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_EOD_Master_Chief">
+                <Original>Master Chief</Original>
+                <English>Master Chief</English>
+                <German>Master Chief</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_EOD_War_Chief">
+                <Original>War Chief</Original>
+                <English>War Chief</English>
+                <German>War Chief</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_AIR_Sergeant">
+                <Original>Sergeant</Original>
+                <English>Sergeant</English>
+                <German>Sergeant</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_AIR_Master_Sergeant">
+                <Original>Master Sergeant</Original>
+                <English>Master Sergeant</English>
+                <German>Master Sergeant</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_AIR_Master_Chief">
+                <Original>Master Chief</Original>
+                <English>Master Chief</English>
+                <German>Master Chief</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_AIR_War_Chief">
+                <Original>War Chief</Original>
+                <English>War Chief</English>
+                <German>War Chief</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_GL_Sergeant">
+                <Original>Sergeant</Original>
+                <English>Sergeant</English>
+                <German>Sergeant</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_GL_Master_Sergeant">
+                <Original>Master Sergeant</Original>
+                <English>Master Sergeant</English>
+                <German>Master Sergeant</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_GL_Master_Chief">
+                <Original>Master Chief</Original>
+                <English>Master Chief</English>
+                <German>Master Chief</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_GL_War_Chief">
+                <Original>War Chief</Original>
+                <English>War Chief</English>
+                <German>War Chief</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_MG_Sergeant">
+                <Original>Sergeant</Original>
+                <English>Sergeant</English>
+                <German>Sergeant</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_MG_Master_Sergeant">
+                <Original>Master Sergeant</Original>
+                <English>Master Sergeant</English>
+                <German>Master Sergeant</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_MG_Master_Chief">
+                <Original>Master Chief</Original>
+                <English>Master Chief</English>
+                <German>Master Chief</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_MG_War_Chief">
+                <Original>War Chief</Original>
+                <English>War Chief</English>
+                <German>War Chief</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_ME_Sergeant">
+                <Original>Sergeant</Original>
+                <English>Sergeant</English>
+                <German>Sergeant</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_ME_Master_Sergeant">
+                <Original>Master Sergeant</Original>
+                <English>Master Sergeant</English>
+                <German>Master Sergeant</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_ME_Master_Chief">
+                <Original>Master Chief</Original>
+                <English>Master Chief</English>
+                <German>Master Chief</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_ME_War_Chief">
+                <Original>War Chief</Original>
+                <English>War Chief</English>
+                <German>War Chief</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_SN_Sergeant">
+                <Original>Sergeant</Original>
+                <English>Sergeant</English>
+                <German>Sergeant</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_SN_Master_Sergeant">
+                <Original>Master Sergeant</Original>
+                <English>Master Sergeant</English>
+                <German>Master Sergeant</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_SN_Master_Chief">
+                <Original>Master Chief</Original>
+                <English>Master Chief</English>
+                <German>Master Chief</German>
+            </Key>
+            <Key ID="STR_INSIGNIA_SN_War_Chief">
+                <Original>War Chief</Original>
+                <English>War Chief</English>
+                <German>War Chief</German>
+            </Key>
+        </Container>
+    </Package>
+</Project>

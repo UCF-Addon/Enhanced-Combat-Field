@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <Project name="ECF_uav">
+    <Package name="ECF_uav">
+      <Key ID="STR_ECF_uav_AssignTarget">
+        <Original>Assign Target</Original>
+        <English>Assign Target</English>
+        <German>Markiere Ziel</German>
+      </Key>
+      <Key ID="STR_ECF_uav_DeleteTarget">
+        <Original>Delete Target</Original>
+        <English>Delete Target</English>
+        <German>Ziel aufheben</German>
+      </Key>
+    </Package>
+  </Project>

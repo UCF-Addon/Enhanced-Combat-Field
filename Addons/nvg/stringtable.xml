@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ECF_NVG">
+  <Package name="ECF_NVG">
+    <Key ID="STR_Gen1_Green">
+      <Original>NS-Google (1. Gen, Green)</Original>
+      <English>NS-Google (1. Gen, Green)</English>
+      <German>NS-Brille (1. Gen, Grün)</German>
+    </Key>
+    <Key ID="STR_Gen1_Brown">
+      <Original>NS-Google (1. Gen, Brown)</Original>
+      <English>NS-Google (1. Gen, Brown)</Original>
+      <German>NS-Brille (1. Gen, Braun)</German>
+    </Key>
+    <Key ID="STR_Gen2_Black">
+      <Original>NS-Google (2. Gen, Black)</Original>
+      <English>NS-Google (2. Gen, Black)</English>
+      <German>NS-Brille (2. Gen, Schwarz)</German>
+    </Key>
+    <Key ID="STR_Gen2_Brown">
+      <Original>NS-Google (2. Gen, Brown)</Original>
+      <English>NS-Google (2. Gen, Brown)</English>
+      <German>NS-Brille (2. Gen, Braun)</German>
+    </Key>
+    <Key ID="STR_Wide_Black">
+      <Original>NS-Google (Wide, Black)</Original>
+      <English>NS-Google (Wide, Black)</English>
+      <German>NS-Brille (Weitwinkel, Schwarz)</German>
+    </Key>
+    <Key ID="STR_Wide_Green">
+      <Original>NS-Google (Wide, Green)</Original>
+      <English>NS-Google (Wide, Green)</English>
+      <German>NS-Brille (Weitwinkel, Grün)</German>
+    </Key>
+  </Package>
+</Project>

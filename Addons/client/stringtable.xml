@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="ECF Client">
+    <Package name="ECF">
+        <Container name="Common">
+            <Key ID="STR_Option_Y">
+                <Original>Yes</Original>
+                <English>Yes</English>
+                <German>Ja</German>
+            </Key>
+            <Key ID="STR_Option_N">
+                <Original>No</Original>
+                <English>No</English>
+                <German>Nein</German>
+            </Key>
+        </Container>
+        <Container name="Respawn">
+            <Key ID="STR_Respawn_DB0">
+                <Original>Fallback</Original>
+                <English>Fallback</English>
+                <German>Fallback</German>
+            </Key>
+            <Key ID="STR_Respawn_DB1">
+                <Original>Rifleman</Original>
+                <English>Rifleman</English>
+                <German>Schütze</German>
+            </Key>
+            <Key ID="STR_Respawn_DB2">
+                <Original>Breacher</Original>
+                <English>Breacher</English>
+                <German>Brecher</German>
+            </Key>
+            <Key ID="STR_Respawn_DB3">
+                <Original>Grenadier</Original>
+                <English>Grenadier</English>
+                <German>Grenadier</German>
+            </Key>
+            <Key ID="STR_Respawn_DB4">
+                <Original>Group Leader</Original>
+                <English>Group Leader</English>
+                <German>Gruppenführer</German>
+            </Key>
+            <Key ID="STR_Respawn_DB5">
+                <Original>Marksman</Original>
+                <English>Marksman</English>
+                <German>Gruppenscharfschütze</German>
+            </Key>
+            <Key ID="STR_Respawn_DB6">
+                <Original>Pilot</Original>
+                <English>Pilot</English>
+                <German>Pilot</German>
+            </Key>
+            <Key ID="STR_Respawn_DB7">
+                <Original>Rocketspecialist</Original>
+                <English>Rocketspecialist</English>
+                <German>Raketenspezialist</German>
+            </Key>
+            <Key ID="STR_Respawn_DB8">
+                <Original>Machinegunner</Original>
+                <English>Machinegunner</English>
+                <German>MG-Schütze</German>
+            </Key>
+            <Key ID="STR_Respawn_DB9">
+                <Original>Medic</Original>
+                <English>Medic</English>
+                <German>Sanitäter</German>
+            </Key>
+            <Key ID="STR_Respawn_DB10">
+                <Original>Sniper</Original>
+                <English>Sniper</English>
+                <German>Scharfschütze</German>
+            </Key>
+            <Key ID="STR_Respawn_DB11">
+                <Original>Spotter</Original>
+                <English>Spotter</English>
+                <German>Spotter</German>
+            </Key>
+            <Key ID="STR_Respawn_DB12">
+                <Original>Teamleader</Original>
+                <English>Teamleader</English>
+                <German>Truppführer</German>
+            </Key>
+            <Key ID="STR_Respawn_DB13">
+                <Original>Explosive Specialist</Original>
+                <English>Explosive Specialist</English>
+                <German>Sprengmeister</German>
+            </Key>
+            <Key ID="STR_Respawn_DB14">
+                <Original>Repairspecialist</Original>
+                <English>Repairspecialist</English>
+                <German>Reparaturspezialist</German>
+            </Key>
+        </Container>
+        <Container name="Modules">
+            <Key ID="STR_Module_Player">
+                <Original>Player Module</Original>
+                <English>Player Module</English>
+                <German>Spieler Modul</German>
+            </Key>
+            <Key ID="STR_Module_Player_FE">
+                <Original>Fallback Equipment</Original>
+                <English>Fallback Equipment</English>
+                <German>Fallback Ausrüstung</German>
+            </Key>
+            <Key ID="STR_Module_Player_FE_D">
+                <Original>Load default fallback equipment when db request fails.</Original>
+                <English>Load default fallback equipment when db request fails.</English>
+                <German>Lade die Standartausrüstung wenn die Datenbankabfrage Fehler hat.</German>
+            </Key>
+            <Key ID="STR_Module_Player_NDBE">
+                <Original>Force Non-DB Equipment</Original>
+                <English>Force Non-DB Equipment</English>
+                <German>Erzwinge keine Datenbankabfrage</German>
+            </Key>
+            <Key ID="STR_Module_Player_NDBE_D">
+                <Original>Force to not overwrite the equipment of the units with the DB requests. (disable DB-Queries)</Original>
+                <English>Force to not overwrite the equipment of the units with the DB requests. (disable DB-Queries)</English>
+                <German>Erzwinge das nicht Überschreiben der Ausrüstung durch die Datenbank. (deaktiviert DB-Abfrage)</German>
+            </Key>
+            <Key ID="STR_Module_Player_IS">
+                <Original>Item Slots</Original>
+                <English>Item Slots</English>
+                <German>Item Slots</German>
+            </Key>
+            <Key ID="STR_Module_Player_IS_D">
+                <Original>Set the equipment for a specific slot of player inventory.</Original>
+                <English>Set the equipment for a specific slot of player inventory.</English>
+                <German>Setzt die Ausrüstung für einen spezifischen Slot des Playerinventar.</German>
+            </Key>
+            <Key ID="STR_Option_Player_Clock">
+                <Original>Watch</Original>
+                <English>Watch</English>
+                <German>Armbanduhr</German>
+            </Key>
+            <Key ID="STR_Option_Player_Altimeter">
+                <Original>Altimeter</Original>
+                <English>Altimeter</English>
+                <German>Höhenmessgerät</German>
+            </Key>
+        </Container>
+    </Package>
+</Project>

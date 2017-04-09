@@ -1,0 +1,11 @@
+name = "ECF";
+actionName = "Clan Website";
+action ="https://ucyf.neogc.de/";
+picture = "ecf_logo.paa";
+description = "Enhanced Combat Field";
+logo = "ecf_logo.paa";
+logoOver = "ecf_logo.paa";
+tooltip = "Enhanced Combat Field";
+tooltipOwned = "ECF Extended Owned";
+author = "UCF Clan";
+overviewPicture = "ecf_logo.paa";

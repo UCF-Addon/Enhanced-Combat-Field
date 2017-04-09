@@ -1,0 +1,1 @@
+#include "\u\ecf\addons\ai\script_component.h"

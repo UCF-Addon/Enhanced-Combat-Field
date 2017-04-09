@@ -1,0 +1,11 @@
+PREP(decSkill);
+PREP(effectStance);
+PREP(getCover);
+PREP(handleFired);
+PREP(initUnit);
+PREP(pFHBullet);
+PREP(pFHUnits);
+PREP(resetCover);
+PREP(resetSkill);
+PREP(resetStance);
+PREP(setupArrays);

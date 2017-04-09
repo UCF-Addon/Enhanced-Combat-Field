@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="ECF Modules">
+    <Package name="ECF">
+        <Container name="Modules">
+            <!-- Common Usage of Stringtables -->
+            <Key ID="STR_Common_Y">
+                <Original>Yes</Original>
+                <English>Yes</English>
+                <German>Ja</German>
+            </Key>
+            <Key ID="STR_Common_N">
+                <Original>No</Original>
+                <English>No</English>
+                <German>Nein</German>
+            </Key>
+            <Key ID="STR_Common_E">
+                <Original>Enabled</Original>
+                <English>Enabled</English>
+                <German>Aktiviert</German>
+            </Key>
+            <Key ID="STR_Common_D">
+                <Original>Disabled</Original>
+                <English>Disabled</English>
+                <German>Deaktiviert</German>
+            </Key>
+
+
+            <!-- Database Module -->
+            <Key ID="STR_Module_DB">
+                <Original>Database Interface</Original>
+                <English>Database Interface</English>
+                <German>Datenbank Schnittstelle</German>
+            </Key>
+
+            <Key ID="STR_Module_DB_USE">
+                <Original>Usage of Interface</Original>
+                <English>Usage of Interface</English>
+                <German>Nutzung der Schnittstelle</German>
+            </Key>
+            <Key ID="STR_Module_DB_USE_D">
+                <Original>Usage of database interface for player equipment loading and connection to payment system. ("Default" = Use db equipment and default equipment for unknown player. | "Force DB" = Use only db equipment and kick unknown player. | "Disable" = Deactivate db equipment and paymentsystem. Handles like default Arma 3.)</Original>
+                <English>Usage of database interface for player equipment loading and connection to payment system. ("Default" = Use db equipment and default equipment for unknown player. | "Force DB" = Use only db equipment and kick unknown player. | "Disable" = Deactivate db equipment and paymentsystem. Handles like default Arma 3.)</English>
+                <German>Nutzung der DB Ausrüstung und des Bezahlungsystem. ("Standard" = Nutzung der DB Ausrüstung und Standardausrüstung für unbekannte Spieler. | "Erzwingen" = Nutzung der DB erzwingen. Unbekannte Spieler werden entfernt. | "Deaktivieren" = Deaktiviert die Nutzung der DB und des Bezahlungssystem. Handhabung wie die Standardausführung von Arma 3.)</German>
+            </Key>
+            <Key ID="STR_Module_DB_USE_0">
+                <Original>Default</Original>
+                <English>Default</English>
+                <German>Standard</German>
+            </Key>
+            <Key ID="STR_Module_DB_USE_1">
+                <Original>Force DB</Original>
+                <English>Force DB</English>
+                <German>Erzwingen</German>
+            </Key>
+            <Key ID="STR_Module_DB_USE_2">
+                <Original>Disable</Original>
+                <English>Disable</English>
+                <German>Deaktivieren</German>
+            </Key>
+
+            <Key ID="STR_Module_DB_IS">
+                <Original>Item Slots</Original>
+                <English>Item Slots</English>
+                <German>Item Slots</German>
+            </Key>
+            <Key ID="STR_Module_DB_IS_D">
+                <Original>Set the equipment for a specific slot of player inventory.</Original>
+                <English>Set the equipment for a specific slot of player inventory.</English>
+                <German>Setzt die Ausrüstung für einen spezifischen Slot des Playerinventar.</German>
+            </Key>
+            <Key ID="STR_Module_DB_IS_Watch">
+                <Original>Watch</Original>
+                <English>Watch</English>
+                <German>Armbanduhr</German>
+            </Key>
+            <Key ID="STR_Module_DB_IS_Altimeter">
+                <Original>Altimeter</Original>
+                <English>Altimeter</English>
+                <German>Höhenmessgerät</German>
+            </Key>
+
+
+            <!-- HUD Module -->
+            <Key ID="STR_Module_HUD">
+                <Original>HUD</Original>
+                <English>HUD</English>
+                <German>HUD</German>
+            </Key>
+
+            <Key ID="STR_Module_HUD_SCN">
+                <Original>Show City Names</Original>
+                <English>Show City Names</English>
+                <German>Zeige Stadtnamen</German>
+            </Key>
+            <Key ID="STR_Module_HUD_SCN_D">
+                <Original>Should the names of cities be shown by the HUD.</Original>
+                <English>Should the names of cities be shown by the HUD.</English>
+                <German>Sollten die Namen der Städte im HUD angezeigt werden.</German>
+            </Key>
+        </Container>
+    </Package>
+</Project>

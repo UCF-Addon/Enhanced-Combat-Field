@@ -1,0 +1,1 @@
+#include "\u\ecf\addons\uav\script_component.h"

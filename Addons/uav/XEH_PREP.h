@@ -1,0 +1,13 @@
+PREP(assignTarget);
+PREP(deleteTarget);
+PREP(dumpAssigned);
+PERP(getCameraDirection);
+PREP(getTarget);
+PREP(isGunner);
+PREP(isSpottingMode);
+PREP(renderAssigned);
+PREP(scanArea);
+PREP(setSpotting);
+PREP(shareAssigned);
+PREP(targetMarked);
+PREP(updateMarker);
