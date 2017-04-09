@@ -1,0 +1,1 @@
+#include "\u\ecf\addons\modules\script_component.h"

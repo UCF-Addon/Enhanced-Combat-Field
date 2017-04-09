@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ECF_Locations">
+	<Package name="ECF_Locations">
+    <Key ID="STR_cityLocationName">
+      <Original>City Name / Daytime</Original>
+      <English>City Name / Daytime</English>
+      <German>Städte Namen / Tageszeit</German>
+    </Key>
+    <Key ID="STR_cityName">
+      <Original>City Name / Daytime</Original>
+      <English>City Name / Daytime</English>
+      <German>Städte Namen / Tageszeit</German>
+    </Key>
+    <Key ID="STR_citName_des">
+      <Original>Shows the City Name and Daytime on the Hud</Original>
+      <English>Shows the City Name and Daytime on the Hud</English>
+      <German>Zeigt den Städte Name und Tageszeit auf dem Hud</German>
+    </Key>
+    <Key ID="STR_ja">
+      <Original>Yes</Original>
+      <English>Yes</English>
+      <German>Ja</German>
+    </Key>
+    <Key ID="STR_nein">
+      <Original>No</Original>
+      <English>No</English>
+      <German>Nein</German>
+    </Key>
+  </Package>
+</Project>

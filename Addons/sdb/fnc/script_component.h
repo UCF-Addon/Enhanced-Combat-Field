@@ -1,0 +1,1 @@
+#include "\u\ecf\addons\sdb\script_component.h"

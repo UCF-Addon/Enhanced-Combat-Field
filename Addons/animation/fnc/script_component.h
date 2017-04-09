@@ -1,0 +1,1 @@
+#include "\u\ecf\addons\animation\script_component.h"

@@ -1,0 +1,1 @@
+#include "\u\ecf\addons\effect\script_component.h"

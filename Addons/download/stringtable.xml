@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <Project name="ECF_download">
+    <Package name="ECF_download">
+      <Key ID="STR_ECF_Download_USB_Download">
+        <Original>USB-Stick (Download)</Original>
+        <English>USB-Stick (Download)</Original>
+        <German>USB-Stick (Download)</German>
+      </Key>
+      <Key ID="STR_ECF_Download_USB_Upload">
+        <Original>USB-Stick (Upload)</Original>
+        <English>USB-Stick (Upload)</Original>
+        <German>USB-Stick (Upload)</German>
+      </Key>
+    <Key ID="STR_ECF_Download_Starte_Download">
+      <Original>Starting Download</Original>
+      <English>Starting Download</English>
+      <German>Starte Download</German>
+    </Key>
+    <Key ID="STR_ECF_Download_Starte_Upload">
+      <Original>Starting Upload</Original>
+      <English>Starting Upload</English>
+      <German>Starte Upload</German>
+    </Key>
+    <Key ID="STR_ECF_Download_No_USB">
+      <Original>You don't have the USB-Stick!</Original>
+      <English>You don't have the USB-Stick!</English>
+      <German>Du hast nicht den USB-Stick!</German>
+    </Key>
+    <Key ID="STR_ECF_Download_Download_finish">
+      <Original>Download finished!</Original>
+      <English>Download finished!</English>
+      <German>Download abgeschlossen!</German>
+    </Key>
+    <Key ID="STR_ECF_Download_Download_aborted">
+      <Original>Download aborted!</Original>
+      <English>Download aborted!</English>
+      <German>Download abgebrochen!</German>
+    </Key>
+    <Key ID="STR_ECF_Download_Download_standby">
+      <Original>Downloading files...</Original>
+      <English>Downloading files...</English>
+      <German>Daten werden heruntergeladen...</German>
+    </Key>
+    <Key ID="STR_ECF_Download_Upload_finish">
+      <Original>Upload finished!</Original>
+      <English>Upload finished!</English>
+      <German>Upload abgeschlossen!</German>
+    </Key>
+    <Key ID="STR_ECF_Download_Upload_aborted">
+      <Original>Upload aborted!</Original>
+      <English>Upload aborted!</English>
+      <German>Upload abgebrochen!</German>
+    </Key>
+    <Key ID="STR_ECF_Download_Upload_standby">
+      <Original>Uploading files...</Original>
+      <English>Uploading files...</English>
+      <German>Daten werden hochgeladen...</German>
+    </Key>
+    <Key ID="STR_ECF_Download_Upload_Files">
+      <Original>Files for Uploading</Origianl>
+      <English>Files for Uploading</English>
+      <German>Daten für das Hochladen</German>
+    </Key>
+    <Key ID="STR_ECF_Download_Downloaded_Files">
+      <Original>Downloaded Files</Origianl>
+      <English>Downloaded Files</English>
+      <German>Herruntergeladene Daten</German>
+    </Key>
+  </Package>
+</Project>

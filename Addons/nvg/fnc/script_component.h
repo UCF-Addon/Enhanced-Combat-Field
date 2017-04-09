@@ -1,0 +1,1 @@
+#include "\u\ecf\addons\nvg\script_component.h"

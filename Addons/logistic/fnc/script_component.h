@@ -1,0 +1,1 @@
+#include "\u\ecf\addons\logistic\script_component.h"

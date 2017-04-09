@@ -1,0 +1,1 @@
+#include "\u\ecf\addons\population\script_component.h"
