@@ -1,0 +1,16 @@
+release/*
+*.cache
+*.pbo
+*.p3d
+*.rtm
+texHeaders.bin
+*.swp
+*.swo
+*.biprivatekey
+Thumbs.db
+.idea/*
+*.iml
+.idea/
+*.bisign
+/textures/
+/Addons/ridgback/
