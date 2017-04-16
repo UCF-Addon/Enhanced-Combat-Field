@@ -97,14 +97,16 @@ if (_isTrafficPFH) then
     if (GMVAR(DOUBLE(driver,speed)) >= 25) then
     {
     	{
-    		if (!isNull (driver _x) && ((!isPlayer _x) && (alive _x))) then
+    		private _car = _x;
+
+    		if (!isNull (driver _car) && ((!isPlayer _car) && (alive _car))) then
     		{
-    			if ((({(isPlayer _x && alive _x)} count (_x nearEntities ["Car", 70])) > 0) || (({!isNull (driver _x)} count (_x nearEntities ["Car", 150])) > 0)) then
+    			if ((({(isPlayer (driver _x) && alive (driver _x))} count (_car nearEntities ["Car", 70])) > 0) || (({!isNull (driver _x)} count (_car nearEntities ["Car", 150])) > 0)) then
     			{
-    				(group (driver _x)) setSpeedMode "LIMITED";
+    				(group (driver _car)) setSpeedMode "LIMITED";
     			} else
     			{
-    				(group (driver _x)) setSpeedMode "NORMAL";
+    				(group (driver _car)) setSpeedMode "NORMAL";
     			};
     		};
         } forEach vehicles;

@@ -1,7 +1,7 @@
 PREP(assignTarget);
 PREP(deleteTarget);
 PREP(dumpAssigned);
-PERP(getCameraDirection);
+PREP(getCameraDirection);
 PREP(getTarget);
 PREP(isGunner);
 PREP(isSpottingMode);
