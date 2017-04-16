@@ -8,14 +8,13 @@ class CfgPatches
         weapons[] = {};
         version = "0.1";
         versionStr = "0.1";
-        VersionDesc = "UCF";
+        VersionDesc = "ECF";
         versionAr[] = {0,1};
 
         requiredVersion = 0.1;
         requiredAddons[] =
         {
-            "ECF_Main",
-            "ECF_Modules"
+            "ECF_Main"
         };
         author = AUTHORS;
     };

@@ -1,0 +1,1 @@
+#include "\u\ecf\addons\network\script_component.h"

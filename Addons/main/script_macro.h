@@ -42,6 +42,12 @@
 #define QGVAR(var1) QUOTE(GVAR(var1))
 #define QGMVAR(var1) QUOTE(GMVAR(var1))
 
+// Event Macros
+#define GEV(var1) TRIPPLE(PREFIX,event,var1)
+#define GMEV(var1) TRIPPLE(ADDON,event,var1)
+#define QGEV(var1) QUOTE(GEV(var1))
+#define QGMEV(var1) QUOTE(GMEV(var1))
+
 
 // Pathing
 #define PATHOF_SYS(var1,var2) SYSPATH\##var1\##var2
