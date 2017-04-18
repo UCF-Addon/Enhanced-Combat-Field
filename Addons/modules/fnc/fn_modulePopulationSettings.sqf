@@ -22,6 +22,14 @@ if ((_logic getVariable "FurnitureActiv") == _true) then
 	GVAR(DOUBLE(Population,objectpFH)) = false;
 };
 
+if ((_logic getVariable "CivilianActiv") == _true) then
+{
+	GVAR(DOUBLE(Population,civilianpFH)) = true;
+} else
+{
+	GVAR(DOUBLE(Population,civilianpFH)) = false;
+};
+
 if ((_logic getVariable "TrafficActiv") == _false) exitWith {};
 GVAR(DOUBLE(Population,trafficpFH)) = true;
 

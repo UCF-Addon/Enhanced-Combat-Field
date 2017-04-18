@@ -20,6 +20,26 @@ class ECF_Population_Traffic_Settings: ECF_Module_Population_F
 
 	class Arguments
 	{
+		class CivilianActiv
+		{
+			displayName = "Civilian Activ";
+			description = "";
+			typeName = "NUMBER";
+			class values
+			{
+				class Disabled
+				{
+					name = "$STR_DISP_OPT_DISABLED";
+					value = _false;
+					default = _false;
+				};
+				class Enabled
+				{
+					name = "$STR_DISP_OPT_ENABLED";
+					value = _true;
+				};
+			};
+		};
 		class FurnitureActiv
 		{
 			displayName = "Furniture Activ";
@@ -31,12 +51,12 @@ class ECF_Population_Traffic_Settings: ECF_Module_Population_F
 				{
 					name = "$STR_DISP_OPT_DISABLED";
 					value = _false;
+					default = _false;
 				};
 				class Enabled
 				{
 					name = "$STR_DISP_OPT_ENABLED";
 					value = _true;
-					default = _true;
 				};
 			};
 		};
