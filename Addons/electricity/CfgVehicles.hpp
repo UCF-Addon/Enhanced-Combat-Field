@@ -1,8 +1,17 @@
+class CBA_Extended_EventHandlers;
+
 class CfgVehicles
 {
 	class ThingX;
 	class Land_PortableGenerator_01_F: ThingX
     {
+		class EventHandlers
+		{
+			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+		};
+
+		GMVAR(isGenerator) = _true;
+
 		class ACE_Actions
 		{
 			class StartGenerator
@@ -12,8 +21,6 @@ class CfgVehicles
 				distance = 4;
 				exceptions[] = {};
 				statement = "_target setVariable [""isStarted"", true, true];";
-				position = "[0,0,0]";
-				//icon = "";
 			};
 			class StopGenerator
 			{
@@ -22,14 +29,19 @@ class CfgVehicles
 				distance = 4;
 				exceptions[] = {};
 				statement = "_target setVariable [""isStarted"", false, true];";
-				position = "[0,0,0]";
-				//icon = "";
 			};
 		};
 	};
 
 	class Land_Portable_generator_F: ThingX
 	{
+		class EventHandlers
+		{
+			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+		};
+
+		GMVAR(isGenerator) = _true;
+
 		class ACE_Actions
 		{
 			class StartGenerator
@@ -39,8 +51,6 @@ class CfgVehicles
 				distance = 4;
 				exceptions[] = {};
 				statement = "_target setVariable [""isStarted"", true, true];";
-				position = "[0,0,0]";
-				//icon = "";
 			};
 			class StopGenerator
 			{
@@ -49,8 +59,6 @@ class CfgVehicles
 				distance = 4;
 				exceptions[] = {};
 				statement = "_target setVariable [""isStarted"", false, true];";
-				position = "[0,0,0]";
-				//icon = "";
 			};
 		};
 	};
@@ -58,6 +66,13 @@ class CfgVehicles
 	class House_Small_F;
 	class Land_PowerGenerator_F: House_Small_F
 	{
+		class EventHandlers
+		{
+			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+		};
+
+		GMVAR(isGenerator) = _true;
+
 		class ACE_Actions
 		{
 			class StartGenerator
@@ -67,8 +82,6 @@ class CfgVehicles
 				distance = 4;
 				exceptions[] = {};
 				statement = "_target setVariable [""isStarted"", true, true];";
-				position = "[0,0,1]";
-				//icon = "";
 			};
 			class StopGenerator
 			{
@@ -77,8 +90,6 @@ class CfgVehicles
 				distance = 4;
 				exceptions[] = {};
 				statement = "_target setVariable [""isStarted"", false, true];";
-				position = "[0,0,1]";
-				//icon = "";
 			};
 		};
 	};

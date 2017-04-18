@@ -1,3 +1,4 @@
+PREP(addGeneratorActions);
 PREP(debugMarkObjects);
 PREP(handlePowerConnect);
 PREP(handlePowerDisconnect);
