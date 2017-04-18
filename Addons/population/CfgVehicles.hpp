@@ -994,7 +994,7 @@ class CfgVehicles
 		};
 	};
 
-	class Land_i_Shed_Ind_F
+	class Land_i_Shed_Ind_F: House_F
 	{
     	class ECF_Furniture
     	{
@@ -1065,7 +1065,7 @@ class CfgVehicles
 	};
 
 	// Garage Shelter
-	class Land_GarageShelter_01_F
+	class Land_GarageShelter_01_F_NOCONFIGFOUND
 	{
     	class ECF_Furniture
     	{
@@ -1111,7 +1111,7 @@ class CfgVehicles
     };
 
     // Guard House
-    class Land_GuardHouse_01_F
+    class Land_GuardHouse_01_F_NOCONFIGFOUND
     {
     	class ECF_Furniture
     	{

@@ -33,3 +33,5 @@ if ((count _objects) < 1) exitWith {};
 
 _house setVariable [QGMVAR(furniture), _spawnedObjs, false];
 _house setVariable [QGMVAR(isFurnished), _true, false];
+
+diag_log format ["Spawned %1 furniture object to house %2", (count _objects), _house];

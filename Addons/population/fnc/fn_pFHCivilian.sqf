@@ -24,12 +24,20 @@ if (GMVAR(DOUBLE(civ,spawnTimeout)) >= GMVAR(DOUBLE(civ,triggerSpawnTimeout))) t
 	_civSpawn = true;
 };
 
+private _startTime = diag_tickTime;
+
+if (_civSpawn) then
 {
-	if ((count (_center nearEntities ["Man", 450])) < 20) then
 	{
-		if (_civSpawn) then
-        {
-        	[_x] call DFUNC(spawnCivilian);
-        };
-	};
-} forEach GMVAR(center);
+		if ((count (_x nearEntities ["Man", 450])) < 20) then
+		{
+			[_x] call DFUNC(spawnCivilian);
+		};
+	} forEach GMVAR(center);
+};
+
+private _stopTime = diag_tickTime;
+if ((_stopTime - _startTime) > 0) then
+{
+	diag_log format ["Spawning one civilian took %1ms", (_stopTime - _startTime)];
+};

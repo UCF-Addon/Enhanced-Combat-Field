@@ -23,7 +23,7 @@ private _type = [] call DFUNC(randomUnitType);
 private _pos = [0,0,0];
 private _dir = random 180;
 
-private _houses = nearestObjects [_center, ["House", "Building"], GMVAR(DOUBLE(civ,spawnMaxRadius))];
+private _houses = nearestObjects [_center, ["House"], GMVAR(DOUBLE(civ,spawnMaxRadius))];
 if ((count _houses) < 2) exitWith { [] };
 
 _houses = [_houses, [_center], {_input0 distance _x}, "ASCEND"] call BIS_fnc_sortBy;
