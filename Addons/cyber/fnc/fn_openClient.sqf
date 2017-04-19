@@ -24,6 +24,15 @@ if (_stage == -1) then
 	missionNamespace setVariable [QGMVAR(clients), _arr, true];
 };
 
+if (_stage == -2) then
+{
+	_arr = missionNamespace getVariable [QGMVAR(clients), []];
+	_arr = _arr - [_obj];
+	missionNamespace setVariable [QGMVAR(clients), _arr, true];
+
+	_obj setVariable [QGMVAR(stage), 0];
+};
+
 if (_obj isKindOf "Land_DataTerminal_01_F") then
 {
 	_stage = _obj getVariable [QGMVAR(stage), 0];
@@ -32,7 +41,13 @@ if (_obj isKindOf "Land_DataTerminal_01_F") then
 	{
 		case 0:
 		{
-			_stage = 1;
+			if (_obj getVariable [QGMVAR(isActiv), false]) then
+			{
+				_stage = 1;
+			} else
+			{
+				hint "Waiting for power plug";
+			};
 		};
 		case 1:
 		{
@@ -73,9 +88,21 @@ if (_obj isKindOf "Land_DataTerminal_01_F") then
 		};
 	};
 
+	if (!(_obj getVariable [QGMVAR(hasDataTunnel), false])) then
+	{
+		_stage = 3;
+	};
+	if (!(_obj getVariable [QGMVAR(isStarted), false])) then
+	{
+		_stage = 2;
+	};
+	if (!(_obj getVariable [QGMVAR(isConnected), false])) then
+	{
+		_stage = 1;
+	};
 	if (!(_obj getVariable [QGMVAR(isActiv), false])) then
 	{
-		_stage = if (_stage > 1) then { 1 } else { _stage };
+		_stage = 0;
 	};
 
 	if ((_obj getVariable [QGMVAR(stage), 0]) != _stage) then

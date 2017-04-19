@@ -1,3 +1,10 @@
+PREP(handleCableConnect);
+PREP(handleCableDisconnect);
+PREP(handleDataConnect);
+PREP(handleDataDisconnect);
+PREP(handleShutdownSystem);
+PREP(handleStartSystem);
+PREP(isConnectedTo);
 PREP(openClient);
 PREP(openClientDataTerminal);
 PREP(pFH);
