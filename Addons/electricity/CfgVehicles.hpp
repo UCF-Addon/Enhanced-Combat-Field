@@ -20,7 +20,7 @@ class CfgVehicles
 				condition = "!(_target getVariable [""isStarted"", false])";
 				distance = 4;
 				exceptions[] = {};
-				statement = "_target setVariable [""isStarted"", true, true];";
+				statement = "_target setVariable [""isStarted"", true, true]; [""ecf_electricity_event_powerSupply"", [_target, true]] call CBA_fnc_localEvent;";
 			};
 			class StopGenerator
 			{
@@ -28,7 +28,7 @@ class CfgVehicles
 				condition = "(_target getVariable [""isStarted"", false])";
 				distance = 4;
 				exceptions[] = {};
-				statement = "_target setVariable [""isStarted"", false, true];";
+				statement = "_target setVariable [""isStarted"", false, true];  [""ecf_electricity_event_powerSupply"", [_target, false]] call CBA_fnc_localEvent;";
 			};
 		};
 	};
@@ -50,7 +50,7 @@ class CfgVehicles
 				condition = "!(_target getVariable [""isStarted"", false])";
 				distance = 4;
 				exceptions[] = {};
-				statement = "_target setVariable [""isStarted"", true, true];";
+				statement = "_target setVariable [""isStarted"", true, true];  [""ecf_electricity_event_powerSupply"", [_target, true]] call CBA_fnc_localEvent;";
 			};
 			class StopGenerator
 			{
@@ -58,7 +58,7 @@ class CfgVehicles
 				condition = "(_target getVariable [""isStarted"", false])";
 				distance = 4;
 				exceptions[] = {};
-				statement = "_target setVariable [""isStarted"", false, true];";
+				statement = "_target setVariable [""isStarted"", false, true];  [""ecf_electricity_event_powerSupply"", [_target, false]] call CBA_fnc_localEvent;";
 			};
 		};
 	};
@@ -81,7 +81,7 @@ class CfgVehicles
 				condition = "!(_target getVariable [""isStarted"", false])";
 				distance = 4;
 				exceptions[] = {};
-				statement = "_target setVariable [""isStarted"", true, true];";
+				statement = "_target setVariable [""isStarted"", true, true];  [""ecf_electricity_event_powerSupply"", [_target, true]] call CBA_fnc_localEvent;";
 			};
 			class StopGenerator
 			{
@@ -89,7 +89,7 @@ class CfgVehicles
 				condition = "(_target getVariable [""isStarted"", false])";
 				distance = 4;
 				exceptions[] = {};
-				statement = "_target setVariable [""isStarted"", false, true];";
+				statement = "_target setVariable [""isStarted"", false, true];  [""ecf_electricity_event_powerSupply"", [_target, false]] call CBA_fnc_localEvent;";
 			};
 		};
 	};

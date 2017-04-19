@@ -1,6 +1,6 @@
 #include "script_component.h"
 
-["ThingX", "init", DFUNC(addGeneratorActions), nil, nil, true] call CBA_fnc_addClassEventHandler;
+//["ThingX", "init", DFUNC(addGeneratorActions), nil, nil, true] call CBA_fnc_addClassEventHandler;
 
 /*
  * Power-Target-Event
