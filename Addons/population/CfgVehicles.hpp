@@ -1064,27 +1064,6 @@ class CfgVehicles
 		};
 	};
 
-	// Garage Shelter
-	class Land_GarageShelter_01_F_NOCONFIGFOUND
-	{
-    	class ECF_Furniture
-    	{
-			Item0[] = {"Land_GasTank_01_blue_F", {3,3.36523,-1.25335}, {}, -1.62805};
-            Item1[] = {"Land_GasTank_01_blue_F", {3.74707,3.41357,-1.25335}, {}, -110.703};
-            Item2[] = {"Land_CanisterPlastic_F", {4.40186,3.12451,-1.25335}, {}, 92.5223};
-            Item3[] = {"Land_CanisterFuel_F", {4.37354,1.35156,-1.25335}, {}, 182.435};
-            Item4[] = {"Land_CanisterFuel_F", {4.17676,0.217773,-1.25335}, {}, 12.169};
-            Item5[] = {"Land_PlasticCase_01_small_F", {-3.58887,3.38428,-1.25334}, {}, 90.1638};
-            Item6[] = {"Land_PlasticCase_01_large_F", {-2.2583,3.2334,-1.25334}, {}, 90.1638};
-            Item7[] = {"Land_BarrelWater_F", {-4.08887,-1.05713,-1.25334}, {}, 160.904};
-            Item8[] = {"Land_BarrelWater_F", {-4.01514,-0.212891,-1.25334}, {}, 160.606};
-            Item9[] = {"Land_BarrelWater_F", {-3.50928,-0.770508,-1.25334}, {}, 197.629};
-            Item10[] = {"Land_Sacks_heap_F", {-0.942383,-1.95947,-1.25335}, {}, -86.1983};
-            Item11[] = {"Land_Sacks_goods_F", {-3.62988,1.28564,-1.25335}, {}, 165.204};
-            Item12[] = {"Land_ShelvesMetal_F", {-0.811035,0.334473,-1.25335}, {}, 1.38748};
-    	};
-	};
-
 	// i Garage
 	class Land_i_Garage_V1_F: House_Small_F
 	{
@@ -1107,20 +1086,6 @@ class CfgVehicles
     		Item2[] = {"Land_CanisterFuel_F", {3.56641,2.48047,-0.0946388}, {}, -6.2593};
     		Item3[] = {"Land_CanisterPlastic_F", {4.41992,2.11523,-0.094635}, {}, -6.2593};
     		Item4[] = {"Land_GasTank_01_blue_F", {4.30371,-1.75781,-0.0975342}, {}, -134.613};
-    	};
-    };
-
-    // Guard House
-    class Land_GuardHouse_01_F_NOCONFIGFOUND
-    {
-    	class ECF_Furniture
-    	{
-			Item0[] = {"Land_OfficeCabinet_01_F", {-2.27686,-4.56543,-1.00598}, {}, -269.898};
-            Item1[] = {"Land_TableDesk_F", {-2.13184,-2.45313,-1.00598}, {}, -88.4501};
-            Item2[] = {"Land_TableDesk_F", {-0.00292969,-4.55957,-1.00598}, {}, 0.826236};
-            Item3[] = {"Land_OfficeChair_01_F", {-1.5332,-0.740234,-1.00598}, {}, -116.413};
-            Item4[] = {"Land_OfficeChair_01_F", {0.844238,-1.08984,-1.00598}, {}, -219.285};
-            Item5[] = {"Land_OfficeChair_01_F", {-0.0820313,-3.50684,-1.00598}, {}, -343.258};
     	};
     };
 
