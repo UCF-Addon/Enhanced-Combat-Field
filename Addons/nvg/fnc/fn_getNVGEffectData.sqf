@@ -16,9 +16,9 @@ params [["_class", nil, [nil,""]]];
 
 if (isNil "_class") exitWith {};
 
-_data = [];
+private _data = [];
 
-_value = getArray (configFile >> "CfgWeapons" >> _class >> QGMVAR(wetDist));
+private _value = getArray (configFile >> "CfgWeapons" >> _class >> QGMVAR(wetDist));
 if ((count _value) == 15) then
 {
 	_data pushBack _value;
