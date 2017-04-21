@@ -29,6 +29,7 @@
  *
  * Arguments:
  * 0: obj <OBJECT>
+ * 1: target <OBJECT> [OPTIONAL]
  *
  * Mode: Global
 **/

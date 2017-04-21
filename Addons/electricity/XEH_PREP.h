@@ -1,6 +1,9 @@
 PREP(addGeneratorActions);
+PREP(connectCable);
 PREP(debugMarkObjects);
 PREP(handlePowerConnect);
 PREP(handlePowerDisconnect);
 PREP(handlePowerSupply);
 PREP(handlePowerTarget);
+PREP(haveCable);
+PREP(haveConnection);

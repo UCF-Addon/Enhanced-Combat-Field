@@ -14,21 +14,46 @@ class CfgVehicles
 
 		class ACE_Actions
 		{
-			class StartGenerator
+			class MainActions
 			{
-				displayName = "Start Generator";
-				condition = "!(_target getVariable [""isStarted"", false])";
+				displayName = "Interaction";
 				distance = 4;
-				exceptions[] = {};
-				statement = "_target setVariable [""isStarted"", true, true]; [""ecf_electricity_event_powerSupply"", [_target, true]] call CBA_fnc_localEvent;";
-			};
-			class StopGenerator
-			{
-				displayName = "Stop Generator";
-				condition = "(_target getVariable [""isStarted"", false])";
-				distance = 4;
-				exceptions[] = {};
-				statement = "_target setVariable [""isStarted"", false, true];  [""ecf_electricity_event_powerSupply"", [_target, false]] call CBA_fnc_localEvent;";
+				condition = QUOTE(true);
+				statement = "";
+				icon = "\a3\ui_f\data\IGUI\Cfg\Actions\eject_ca.paa";
+
+				class StartGenerator
+    			{
+    				displayName = "Start Generator";
+    				condition = "!(_target getVariable [""isStarted"", false])";
+    				distance = 4;
+    				exceptions[] = {};
+    				statement = "_target setVariable [""isStarted"", true, true]; [""ecf_electricity_event_powerSupply"", [_target, true]] call CBA_fnc_localEvent;";
+    			};
+    			class StopGenerator
+    			{
+    				displayName = "Stop Generator";
+    				condition = "(_target getVariable [""isStarted"", false])";
+    				distance = 4;
+    				exceptions[] = {};
+    				statement = "_target setVariable [""isStarted"", false, true];  [""ecf_electricity_event_powerSupply"", [_target, false]] call CBA_fnc_localEvent;";
+    			};
+    			class ConnectCable
+    			{
+    				displayName = "Connect Cable";
+    				condition = "[player] call Electricity_fnc_haveCable";
+    				distance = 4;
+    				exceptions[] = {};
+    				statement = "[player, _target] call Electricity_fnc_connectCable;";
+    			};
+    			class DisconnectCable
+    			{
+    				displayName = "Disconnect Cable";
+    				condition = "[_target] call Electricity_fnc_haveConnection";
+    				distance = 4;
+    				exceptions[] = {};
+    				statement = "[""ecf_electricity_event_powerDisconnect"", [_target]] call CBA_fnc_localEvent;";
+    			};
 			};
 		};
 	};
@@ -44,21 +69,46 @@ class CfgVehicles
 
 		class ACE_Actions
 		{
-			class StartGenerator
+			class MainActions
 			{
-				displayName = "Start Generator";
-				condition = "!(_target getVariable [""isStarted"", false])";
+				displayName = "Interaction";
 				distance = 4;
-				exceptions[] = {};
-				statement = "_target setVariable [""isStarted"", true, true];  [""ecf_electricity_event_powerSupply"", [_target, true]] call CBA_fnc_localEvent;";
-			};
-			class StopGenerator
-			{
-				displayName = "Stop Generator";
-				condition = "(_target getVariable [""isStarted"", false])";
-				distance = 4;
-				exceptions[] = {};
-				statement = "_target setVariable [""isStarted"", false, true];  [""ecf_electricity_event_powerSupply"", [_target, false]] call CBA_fnc_localEvent;";
+				condition = QUOTE(true);
+				statement = "";
+				icon = "\a3\ui_f\data\IGUI\Cfg\Actions\eject_ca.paa";
+
+				class StartGenerator
+    			{
+    				displayName = "Start Generator";
+    				condition = "!(_target getVariable [""isStarted"", false])";
+    				distance = 4;
+    				exceptions[] = {};
+    				statement = "_target setVariable [""isStarted"", true, true]; [""ecf_electricity_event_powerSupply"", [_target, true]] call CBA_fnc_localEvent;";
+    			};
+    			class StopGenerator
+    			{
+    				displayName = "Stop Generator";
+    				condition = "(_target getVariable [""isStarted"", false])";
+    				distance = 4;
+    				exceptions[] = {};
+    				statement = "_target setVariable [""isStarted"", false, true];  [""ecf_electricity_event_powerSupply"", [_target, false]] call CBA_fnc_localEvent;";
+    			};
+    			class ConnectCable
+    			{
+    				displayName = "Connect Cable";
+    				condition = "[player] call Electricity_fnc_haveCable";
+    				distance = 4;
+    				exceptions[] = {};
+    				statement = "[player, _target] call Electricity_fnc_connectCable;";
+    			};
+    			class DisconnectCable
+    			{
+    				displayName = "Disconnect Cable";
+    				condition = "[_target] call Electricity_fnc_haveConnection";
+    				distance = 4;
+    				exceptions[] = {};
+    				statement = "[""ecf_electricity_event_powerDisconnect"", [_target]] call CBA_fnc_localEvent;";
+    			};
 			};
 		};
 	};
@@ -75,21 +125,73 @@ class CfgVehicles
 
 		class ACE_Actions
 		{
-			class StartGenerator
+			class MainActions
 			{
-				displayName = "Start Generator";
-				condition = "!(_target getVariable [""isStarted"", false])";
+				displayName = "Interaction";
 				distance = 4;
-				exceptions[] = {};
-				statement = "_target setVariable [""isStarted"", true, true];  [""ecf_electricity_event_powerSupply"", [_target, true]] call CBA_fnc_localEvent;";
+				condition = QUOTE(true);
+				statement = "";
+				icon = "\a3\ui_f\data\IGUI\Cfg\Actions\eject_ca.paa";
+
+				class StartGenerator
+    			{
+    				displayName = "Start Generator";
+    				condition = "!(_target getVariable [""isStarted"", false])";
+    				distance = 4;
+    				exceptions[] = {};
+    				statement = "_target setVariable [""isStarted"", true, true]; [""ecf_electricity_event_powerSupply"", [_target, true]] call CBA_fnc_localEvent;";
+    			};
+    			class StopGenerator
+    			{
+    				displayName = "Stop Generator";
+    				condition = "(_target getVariable [""isStarted"", false])";
+    				distance = 4;
+    				exceptions[] = {};
+    				statement = "_target setVariable [""isStarted"", false, true];  [""ecf_electricity_event_powerSupply"", [_target, false]] call CBA_fnc_localEvent;";
+    			};
+    			class ConnectCable
+    			{
+    				displayName = "Connect Cable";
+    				condition = "[player] call Electricity_fnc_haveCable";
+    				distance = 4;
+    				exceptions[] = {};
+    				statement = "[player, _target] call Electricity_fnc_connectCable;";
+    			};
+    			class DisconnectCable
+    			{
+    				displayName = "Disconnect Cable";
+    				condition = "[_target] call Electricity_fnc_haveConnection";
+    				distance = 4;
+    				exceptions[] = {};
+    				statement = "[""ecf_electricity_event_powerDisconnect"", [_target]] call CBA_fnc_localEvent;";
+    			};
 			};
-			class StopGenerator
+		};
+	};
+
+	class Land_DataTerminal_01_F;
+	class ECF_Land_DataTerminal_01_F: Land_DataTerminal_01_F
+	{
+		class ACE_Actions
+		{
+			class MainActions
 			{
-				displayName = "Stop Generator";
-				condition = "(_target getVariable [""isStarted"", false])";
-				distance = 4;
-				exceptions[] = {};
-				statement = "_target setVariable [""isStarted"", false, true];  [""ecf_electricity_event_powerSupply"", [_target, false]] call CBA_fnc_localEvent;";
+				class ConnectCable
+    			{
+    				displayName = "Connect Cable";
+    				condition = "[player] call Electricity_fnc_haveCable";
+    				distance = 4;
+    				exceptions[] = {};
+    				statement = "[player, _target] call Electricity_fnc_connectCable;";
+    			};
+    			class DisconnectCable
+    			{
+    				displayName = "Disconnect Cable";
+    				condition = "[_target] call Electricity_fnc_haveConnection";
+    				distance = 4;
+    				exceptions[] = {};
+    				statement = "[""ecf_electricity_event_powerDisconnect"", [_target]] call CBA_fnc_localEvent;";
+    			};
 			};
 		};
 	};
