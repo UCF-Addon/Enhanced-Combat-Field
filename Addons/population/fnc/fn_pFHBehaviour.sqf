@@ -104,10 +104,10 @@ if (_isTrafficPFH) then
     		{
 				if ((count (_car nearEntities ["Man", 70])) > 0 || (count (_car nearEntities ["Car", 150])) > 0) then
 				{
-					(group driver) setSpeedMode "LIMITED";
+					(group _driver) setSpeedMode "LIMITED";
 				} else
 				{
-					(group driver) setSpeedMode "NORMAL";
+					(group _driver) setSpeedMode "NORMAL";
 				};
     		};
         } forEach vehicles;

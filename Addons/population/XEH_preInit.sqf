@@ -23,6 +23,7 @@ GMVAR(civilianpFH) = false;
 GMVAR(DOUBLE(car,triggerSpawnTimeout)) = 200; // every 4 sec
 GMVAR(DOUBLE(civ,triggerSpawnTimeout)) = 80;
 GMVAR(DOUBLE(fur,triggerSpawnTimeout)) = 250; // every 5 sec
+GMVAR(DOUBLE(fur,triggerObjectTimeout)) = 5; // 10x a second
 GMVAR(DOUBLE(hel,triggerSpawnTimeout)) = 700;
 GMVAR(DOUBLE(par,triggerSpawnTimeout)) = 750;
 

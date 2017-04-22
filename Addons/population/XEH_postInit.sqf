@@ -6,6 +6,7 @@ GMVAR(center) = [];
 GMVAR(DOUBLE(car,spawnTimeout)) = 0;
 GMVAR(DOUBLE(civ,spawnTimeout)) = 0;
 GMVAR(DOUBLE(fur,spawnTimeout)) = 0;
+GMVAR(DOUBLE(furObj,spawnTimeout)) = 0;
 GMVAR(DOUBLE(hel,spawnTimeout)) = 0;
 GMVAR(DOUBLE(par,spawnTimeout)) = 0;
 
@@ -17,6 +18,7 @@ GMVAR(DOUBLE(driver,speed)) = 0;
 GMVAR(DOUBLE(car,types)) = [];
 GMVAR(DOUBLE(civ,types)) = [];
 GMVAR(DOUBLE(hel,types)) = [];
+GMVAR(furCache) = [];
 
 [] call DFUNC(prepareUnitTypes);
 [] call DFUNC(prepareCarTypes);
