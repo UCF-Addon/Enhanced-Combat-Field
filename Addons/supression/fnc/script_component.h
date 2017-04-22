@@ -1,1 +1,0 @@
-#include "\u\ecf\addons\supression\script_component.h"
