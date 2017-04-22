@@ -25,7 +25,21 @@ _connection pushBack _obj;
 
 if (count _connection >= 2) then
 {
-	[QGMEV(powerConnect), [_connection select 0, _connection select 1]] call CBA_fnc_localEvent;
+	private _src = _connection select 0;
+	private _dst = _connection select 1;
+
+	if (getNumber (configFile >> "CfgVehicles" >> (typeOf (_connection select 1)) >> "") == _true) then
+	{
+		if (getNumber (configFile >> "CfgVehicles" >> (typeOf (_connection select 0)) >> "") == _true) exitWith
+		{
+			hint "You can't connect a generator with a generator";
+		};
+
+		_dst = _connection select 0;
+		_src = _connection select 1;
+	};
+
+	[QGMEV(powerConnect), [_src, _dst]] call CBA_fnc_localEvent;
 	_unit setVariable [QGMVAR(cableConnection), nil, true];
 } else
 {

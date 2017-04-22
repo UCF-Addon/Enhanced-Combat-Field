@@ -41,7 +41,7 @@ class CfgVehicles
     			class ConnectCable
     			{
     				displayName = "Connect Cable";
-    				condition = "[player] call Electricity_fnc_haveCable";
+    				condition = "(count (player getVariable [""ecf_electricity_cableConnection"", []]) < 1) && ([player] call Electricity_fnc_haveCable) && !([_target] call Electricity_fnc_haveConnection)";
     				distance = 4;
     				exceptions[] = {};
     				statement = "[player, _target] call Electricity_fnc_connectCable;";
@@ -96,7 +96,7 @@ class CfgVehicles
     			class ConnectCable
     			{
     				displayName = "Connect Cable";
-    				condition = "[player] call Electricity_fnc_haveCable";
+    				condition = "(count (player getVariable [""ecf_electricity_cableConnection"", []]) < 1) && ([player] call Electricity_fnc_haveCable) && !([_target] call Electricity_fnc_haveConnection)";
     				distance = 4;
     				exceptions[] = {};
     				statement = "[player, _target] call Electricity_fnc_connectCable;";
@@ -152,7 +152,7 @@ class CfgVehicles
     			class ConnectCable
     			{
     				displayName = "Connect Cable";
-    				condition = "[player] call Electricity_fnc_haveCable";
+    				condition = "(count (player getVariable [""ecf_electricity_cableConnection"", []]) < 1) && ([player] call Electricity_fnc_haveCable) && !([_target] call Electricity_fnc_haveConnection)";
     				distance = 4;
     				exceptions[] = {};
     				statement = "[player, _target] call Electricity_fnc_connectCable;";
@@ -179,7 +179,7 @@ class CfgVehicles
 				class ConnectCable
     			{
     				displayName = "Connect Cable";
-    				condition = "[player] call Electricity_fnc_haveCable";
+    				condition = "(count (player getVariable [""ecf_electricity_cableConnection"", []]) > 0) && !([_target] call Electricity_fnc_haveConnection)";
     				distance = 4;
     				exceptions[] = {};
     				statement = "[player, _target] call Electricity_fnc_connectCable;";
