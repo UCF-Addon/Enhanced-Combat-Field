@@ -26,7 +26,7 @@ if (_mount) then
     	_unit playMoveNow "MountSide";
     	_nul = [_unit, _side] spawn
     	{
-    		sleep 0.3;
+    		sleep 6;
     		(_this select 0) removeItem (_this select 1);
 			(_this select 0) addPrimaryWeaponItem (_this select 1);
     	};
@@ -36,7 +36,7 @@ if (_mount) then
     	_unit playMoveNow "MountSide";
 		_nul = [_unit, _side] spawn
     	{
-    		sleep 0.3;
+    		sleep 6;
     		(_this select 0) removeItem (_this select 1);
 			(_this select 0) addSecondaryWeaponItem (_this select 1);
     	};
@@ -48,7 +48,7 @@ if (_mount) then
     	_unit playMoveNow "DismountSide";
     	_nul = [_unit, _side] spawn
     	{
-    		sleep 0.3;
+    		sleep 13;
     		(_this select 0) addItem (_this select 1);
 			(_this select 0) removePrimaryWeaponItem (_this select 1);
     	};
@@ -58,7 +58,7 @@ if (_mount) then
     	_unit playMoveNow "DismountSide";
 		_nul = [_unit, _side] spawn
     	{
-    		sleep 0.3;
+    		sleep 13;
     		(_this select 0) addItem (_this select 1);
 			(_this select 0) removeSecondaryWeaponItem (_this select 1);
     	};

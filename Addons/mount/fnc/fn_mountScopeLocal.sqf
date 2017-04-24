@@ -26,7 +26,7 @@ if (_mount) then
     	_unit playMoveNow "MountOptic";
     	_nul = [_unit, _scope] spawn
     	{
-			sleep 0.3;
+			sleep 1.7;
     		(_this select 0) removeItem (_this select 1);
 			(_this select 0) addPrimaryWeaponItem (_this select 1);
 		};
@@ -36,7 +36,7 @@ if (_mount) then
     	_unit playMoveNow "MountOptic";
 		_nul = [_unit, _scope] spawn
     	{
-    		sleep 0.3;
+    		sleep 1.7;
     		(_this select 0) removeItem (_this select 1);
 			(_this select 0) addSecondaryWeaponItem (_this select 1);
     	};
@@ -48,7 +48,7 @@ if (_mount) then
     	_unit playMoveNow "DismountOptic";
 		_nul = [_unit, _scope] spawn
 		{
-			sleep 0.3;
+			sleep 2.1;
 			(_this select 0) addItem (_this select 1);
 			(_this select 0) removePrimaryWeaponItem (_this select 1);
 		};
@@ -58,7 +58,7 @@ if (_mount) then
     	_unit playMoveNow "DismountOptic";
     	_nul = [_unit, _scope] spawn
 		{
-			sleep 0.3;
+			sleep 2.1;
 			(_this select 0) addItem (_this select 1);
 			(_this select 0) removeSecondaryWeaponItem (_this select 1);
 		};
