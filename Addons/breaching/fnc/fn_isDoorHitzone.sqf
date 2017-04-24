@@ -8,9 +8,9 @@ if (isNil "_selection" || _selection == "") exitWith { false };
 
 if ((str _selection) find "door" > -1) then
 {
-	_posRel = _obj selectionPosition _selection;
-	_posMTW = _obj modelToWorld _posRel;
-	_posAGL = ASLToAGL _posASL;
+	private _posRel = _obj selectionPosition _selection;
+	private _posMTW = _obj modelToWorld _posRel;
+	private _posAGL = ASLToAGL _posASL;
 
 	// TODO: positon of hinge or door latch
 	// QuickFix: center of door with radius 0.15

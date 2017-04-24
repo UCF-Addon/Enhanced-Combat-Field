@@ -15,23 +15,15 @@
 params [];
 
 private _furSpawn = false;
-private _furObjSpawn = false;
 private _parSpawn = false;
 
 GMVAR(DOUBLE(fur,spawnTimeout)) = GMVAR(DOUBLE(fur,spawnTimeout)) + 1;
-GMVAR(DOUBLE(furObj,spawnTimeout)) = GMVAR(DOUBLE(furObj,spawnTimeout)) + 1;
 GMVAR(DOUBLE(par,spawnTimeout)) = GMVAR(DOUBLE(par,spawnTimeout)) + 1;
 
 if (GMVAR(DOUBLE(fur,spawnTimeout)) >= GMVAR(DOUBLE(fur,triggerSpawnTimeout))) then
 {
 	GMVAR(DOUBLE(fur,spawnTimeout)) = 0;
 	_furSpawn = true;
-};
-
-if (GMVAR(DOUBLE(furObj,spawnTimeout)) >= GMVAR(DOUBLE(fur,triggerObjectTimeout))) then
-{
-	GMVAR(DOUBLE(furObj,spawnTimeout)) = 0;
-	_furObjSpawn = true;
 };
 
 if (GMVAR(DOUBLE(par,spawnTimeout)) >= GMVAR(DOUBLE(par,triggerSpawnTimeout))) then
@@ -50,25 +42,9 @@ private _startTime = diag_tickTime;
 		{
 			if ((_x getVariable [QGMVAR(isFurnished), _false]) == _false) then
 			{
-				[_center, _x] call DFUNC(spawnFurniture);
+				[_center, _x] spawn DFUNC(spawnFurniture);
 			};
 		} forEach (_center nearObjects ["House", GMVAR(DOUBLE(fur,spawnRadius))]);
-	};
-
-	if (_furObjSpawn) then
-	{
-		private _c = if (count GMVAR(furCache) > 3) then { 3 } else { count GMVAR(furCache) };
-		for "_i" from 0 to _c do
-		{
-			_entry = GMVAR(furCache) select 0;
-			_obj = _entry call DFUNC(furnish);
-
-			_arr = (_entry select 0) getVariable [QGMVAR(furniture), []];
-			_arr pushBack _obj;
-			(_entry select 0) setVariable [QGMVAR(furniture), _arr, false];
-
-			GMVAR(furCache) = GMVAR(furCache) - [_entry];
-		};
 	};
 
 	if (_parSpawn) then

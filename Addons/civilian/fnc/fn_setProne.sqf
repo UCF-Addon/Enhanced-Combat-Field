@@ -15,7 +15,7 @@
  
  params ["_unit", ["_moveCover", false, [false]]];
 
-_rnd = 0;
+private _rnd = 0;
 
 if (_moveCover) then
 {

@@ -9,7 +9,7 @@ _nul = _player spawn
     _this setVariable ["loading", true, true];
 
     _this call DFUNC(prepareUnit);
-    _classid = _this getVariable ["_classid", -1];
+    private _classid = _this getVariable ["_classid", -1];
     if (_classid > 0) then
     {
 		[_this, _classid] call DFUNC(loadPlayerData);

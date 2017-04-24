@@ -32,7 +32,7 @@ class CfgVehicles
 				class OpenDatacenter
     			{
     				displayName = "Open Datacenter";
-        			condition = "(_target getVariable [""ECF_Cyber_isActiv"", false]) && !(_target in (missionNamespace getVariable [QGMVAR(clients), []]))";
+        			condition = "(_target getVariable [""ECF_Cyber_isActiv"", false]) && !(_target in (missionNamespace getVariable [""ecf_cyber_clients"", []]))";
         			distance = 4;
         			exceptions[] = {};
         			statement = "[_target, -1] call Cyber_fnc_openClient";
@@ -40,7 +40,7 @@ class CfgVehicles
     			class CloseDatacenter
     			{
     				displayName = "Close Datacenter";
-    				condition = "(_target in (missionNamespace getVariable [QGMVAR(clients), []]))";
+    				condition = "(_target in (missionNamespace getVariable [""ecf_cyber_clients"", []]))";
     				distance = 4;
     				exceptions[] = {};
     				statement = "[_target, -2] call Cyber_fnc_openClient";
@@ -48,7 +48,7 @@ class CfgVehicles
     			class StartSystem
     			{
     				displayName = "Start Datacenter";
-    				condition = "!(_target getVariable [""Ecy_Cyber_isStarted"", false]) && (_target in (missionNamespace getVariable [QGMVAR(clients), []]))";
+    				condition = "(_target getVariable [""ECF_Cyber_isActiv"", false]) && !(_target getVariable [""Ecy_Cyber_isStarted"", false]) && (_target in (missionNamespace getVariable [""ecf_cyber_clients"", []]))";
     				distance = 4;
     				exceptions[] = {};
     				statement = "[""ecf_cyber_event_startSystem"", [_target]] call CBA_fnc_localEvent";
@@ -64,7 +64,7 @@ class CfgVehicles
     			class ConnectDataCable
     			{
 					displayName = "Connect Data Cable";
-					condition = "([player] call Cyber_fnc_haveCable) && (count (_target getVariable [""ecf_cyber_cableConnections"", []]) > 0)";
+					condition = "([player] call Cyber_fnc_haveCable) && (count (_target getVariable [""ecf_cyber_cableConnections"", []]) < 1)";
 					distance = 4;
 					exceptions[] = {};
 					statement = "[player, _target] call Cyber_fnc_connectCable";

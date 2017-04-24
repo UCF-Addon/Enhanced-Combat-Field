@@ -6,7 +6,6 @@ GMVAR(center) = [];
 GMVAR(DOUBLE(car,spawnTimeout)) = 0;
 GMVAR(DOUBLE(civ,spawnTimeout)) = 0;
 GMVAR(DOUBLE(fur,spawnTimeout)) = 0;
-GMVAR(DOUBLE(furObj,spawnTimeout)) = 0;
 GMVAR(DOUBLE(hel,spawnTimeout)) = 0;
 GMVAR(DOUBLE(par,spawnTimeout)) = 0;
 

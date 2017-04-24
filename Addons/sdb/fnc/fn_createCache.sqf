@@ -9,5 +9,5 @@ if (isNil QGMVAR(cache)) then
 
 if (_uid call DFUNC(isCached)) exitWith {};
 
-_entry = [_uid, []];
+private _entry = [_uid, []];
 GMVAR(cache) pushBack _entry;

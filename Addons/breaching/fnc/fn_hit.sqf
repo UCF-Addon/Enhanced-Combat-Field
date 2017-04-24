@@ -11,11 +11,11 @@
  * None
  *
  * Public: No
- */
+*/
 
- params [["_unit", objNull, [objNull]], ["_source", objNull, [objNull]]];
+params [["_unit", objNull, [objNull]], ["_source", objNull, [objNull]]];
 
- if (isNull _unit || isNull _source) exitWith {};
+if (isNull _unit || isNull _source) exitWith {};
 
 diag_log format ["Hit: %1, %2", _unit, _source];
 

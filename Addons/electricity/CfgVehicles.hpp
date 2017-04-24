@@ -187,7 +187,7 @@ class CfgVehicles
     			class DisconnectCable
     			{
     				displayName = "Disconnect Cable";
-    				condition = "[_target] call Electricity_fnc_haveConnection";
+    				condition = "([_target] call Electricity_fnc_haveConnection)";
     				distance = 4;
     				exceptions[] = {};
     				statement = "[""ecf_electricity_event_powerDisconnect"", [_target]] call CBA_fnc_localEvent;";

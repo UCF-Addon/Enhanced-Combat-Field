@@ -91,7 +91,17 @@ if (_obj isKindOf "Land_DataTerminal_01_F") then
 
 	if ((_obj getVariable [QGMVAR(stage), 0]) != _stage) then
 	{
-		_stage = _stage min 0;
+		_stage = _stage max 0;
+
+		/*
+		if (_stage >= 4) then
+		{
+			[_obj] call logistic_fnc_registerRespawn;
+		} else
+		{
+			[nil, _obj] call logistic_fnc_unregisterRespawn;
+		};
+		*/
 
 		[_obj, _stage] call DFUNC(openClientDataTerminal);
 		_obj setVariable [QGMVAR(stage), _stage, true];

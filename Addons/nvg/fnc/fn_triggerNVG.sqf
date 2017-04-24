@@ -19,6 +19,7 @@ if (!hasInterface) exitWith {};
 disableSerialization;
 
 // TODO: Check whether unit has a vehicle of weapon to fix a workaround of the effects
+// TODO: Check whether unit is using a scope to prevent worse nvg effects
 private _hmd = hmd player;
 private _visionMode = currentVisionMode player;
 
