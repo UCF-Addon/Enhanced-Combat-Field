@@ -1,5 +1,7 @@
 class CfgVehicles
 {
+	#include "CfgModules.hpp"
+
     // User Interface
     class Man;
 
