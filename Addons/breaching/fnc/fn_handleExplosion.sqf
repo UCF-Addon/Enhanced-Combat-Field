@@ -38,7 +38,7 @@ if (GVAR(local)) then
             //if((_charge getRelDir (getPos _x) < 240) && (_charge getRelDir (getPos _x) > 120)) then
             //{
                 // Stun AI
-                _x spawn
+                _nul = _x spawn
                 {
                     _this disableAI "AUTOTARGET";
                     _this switchMove "acts_CrouchingCoveringRifle01";

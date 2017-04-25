@@ -37,8 +37,8 @@ class ECF_MODULES_M_BREACKING_LOCK_AREA: ECF_MODULES_M_F
 		class HousePercentage
 		{
 			displayName = "House Percentage";
-			description = "Percantage of building in area to lock doors";
-			defaultValue = "65";
+			description = "Percentage of building in area to lock doors";
+			defaultValue = "0.65";
 		};
 
 		class DoorPercentage

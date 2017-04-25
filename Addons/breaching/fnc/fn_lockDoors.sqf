@@ -4,7 +4,7 @@ private ["_houses", "_chance", "_auto"];
 
 _houses = _this select 0;
 _chance = _this select 1;
-_auto = !(typeName _chance == "SCALAR");
+_auto = !(typeName _chance == "SCALAR") || (_this select 2);
 
 {
     if (_auto) then

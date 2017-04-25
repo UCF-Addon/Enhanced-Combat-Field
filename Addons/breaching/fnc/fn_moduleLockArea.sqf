@@ -16,13 +16,13 @@
 
 params [["_logic", objNull], ["_units", []], ["_activ", true]];
 
-private _range = compile (_logic getVariable "Range");
-private _hPerc = compile (_logic getVariable "HousePercentage");
-private _dPerc = compile (_logic getVariable "DoorPercentage");
+private _range = call compile (_logic getVariable "Range");
+private _hPerc = call compile (_logic getVariable "HousePercentage");
+private _dPerc = call compile (_logic getVariable "DoorPercentage");
 
 if (typeName _range != "SCALAR" || typeName _hPerc != "SCALAR" || typeName _dPerc != "SCALAR") exitWith
 {
-	systemChat "Wrong configurated module. The Lock-Area-Module only accept scalar inputs.";
+	systemChat "Wrong configurated module. The Lock-Area-Module only accept numeric inputs.";
 };
 
 private _pos = getPos _logic;
@@ -32,7 +32,7 @@ private _selected = [];
 private _hc = count _houses;
 private _nhc = _hPerc * _hc;
 
-for "_i" from 0 to _nhc do
+for "_i" from 1 to _nhc do
 {
 	_index = random (_hc - _i);
 	_house = _houses select _index;
@@ -40,4 +40,4 @@ for "_i" from 0 to _nhc do
 	_houses = _houses - [_house];
 };
 
-[_selected, _dPerc, (_dPerc < 0 || _dPerc > 100)] call DFUNC(lockDoors);
+[_selected, _dPerc, (_dPerc < 0 || _dPerc > 1)] call DFUNC(lockDoors);

@@ -12,7 +12,7 @@ _hasMag = false;
 
 if !(_hasMag) exitWith {};
 
-[] spawn
+_nul = [] spawn
 {
     _ccp = [2.5, false] call DFUNC(calcChargePos);
     _pos = _ccp select 0;

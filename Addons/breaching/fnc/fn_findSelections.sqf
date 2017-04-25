@@ -30,8 +30,6 @@ if ([_selections, "dvere"] call _fnc_find) exitWith
     if (true) exitWith { _array };
 };
 
-if !([_selections, "dvere"] call _fnc_find) exitWith { [] };
-
 private _array = [];
 {
     if ((_x find "door" >= 0) && !((_x find "trigger" > -1) OR (_x find "handle" > -1))) then
