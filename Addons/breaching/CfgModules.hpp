@@ -4,6 +4,7 @@ class ECF_MODULES_M_BREACHING_SETSTATE: ECF_MODULES_M_F
 {
 	scope = 2;
 	displayName = "Set Breacher-State";
+	category = "ECF_Module_Breaching";
 
 	function = QFUNC(moduleSetState);
 
@@ -22,6 +23,7 @@ class ECF_MODULES_M_BREACKING_LOCK_AREA: ECF_MODULES_M_F
 {
 	scope = 2;
 	displayName = "Lock Area";
+	category = "ECF_Module_Breaching";
 
 	function = QFUNC(moduleLockArea);
 
@@ -54,6 +56,7 @@ class ECF_MODULES_M_BREACHING_LOCK_NEAREST: ECF_MODULES_M_F
 {
 	scope = 2;
 	displayName = "Lock nearest Door";
+	category = "ECF_Module_Breaching";
 
 	function = QFUNC(moduleLockNearest);
 };
