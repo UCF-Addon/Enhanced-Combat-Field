@@ -4,4 +4,6 @@ ADDON = false;
 
 #include "XEH_PREP.h"
 
+GMVAR(initializedClasses) = [];
+
 ADDON = true;

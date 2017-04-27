@@ -12,7 +12,7 @@ GMVAR(objectpFH) = false;
 GMVAR(trafficpFH) = false;
 
 // Traffic Subtasks
-GMVAR(trafficpFHCar) = true;
+GMVAR(trafficpFHCar) = false;
 GMVAR(trafficpFHHeli) = false;
 GMVAR(trafficpFHBoat) = false;
 

@@ -16,7 +16,7 @@ params [["_class", nil, ["",nil]]];
 
 if (isNil "_class") exitWith {};
 
-_data = [_class] call DFUNC(getNVGEffectData);
+private _data = [_class] call DFUNC(getNVGEffectData);
 
 GMVAR(DOUBLE(PP,wetDist)) ppEffectEnable true;
 GMVAR(DOUBLE(PP,filmGrain)) ppEffectEnable true;

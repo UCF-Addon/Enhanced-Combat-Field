@@ -10,5 +10,8 @@ PREP(isBBullet);
 PREP(isDoor);
 PREP(isDoorHitzone);
 PREP(lockDoors);
+PREP(moduleLockArea);
+PREP(moduleLockNearest);
+PREP(moduleSetState);
 PREP(openDoor);
 PREP(setupExplosiv);

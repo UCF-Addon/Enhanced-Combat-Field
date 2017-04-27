@@ -17,6 +17,7 @@ GMVAR(DOUBLE(driver,speed)) = 0;
 GMVAR(DOUBLE(car,types)) = [];
 GMVAR(DOUBLE(civ,types)) = [];
 GMVAR(DOUBLE(hel,types)) = [];
+GMVAR(furCache) = [];
 
 [] call DFUNC(prepareUnitTypes);
 [] call DFUNC(prepareCarTypes);

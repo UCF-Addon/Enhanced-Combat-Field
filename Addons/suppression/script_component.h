@@ -1,4 +1,4 @@
-#define COMPONENT supression
+#define COMPONENT suppression
 
 #include "\u\ecf\addons\main\script_macro.h"
 

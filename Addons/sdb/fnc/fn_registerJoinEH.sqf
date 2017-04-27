@@ -8,7 +8,7 @@ if (((_uid find "HC") >= 0) || (_uid == "")) exitWith {};
 _nul = _uid spawn
 {
 	diag_log format ["Query Check: %1", _this];
-    _exists = _this call DFUNC(queryCheckExist);
+    private _exists = _this call DFUNC(queryCheckExist);
     if (typeName _exists == "BOOL" && !_exists) exitWith
     {
     	diag_log format ["Player (%1) got kicked by SDB", _this];

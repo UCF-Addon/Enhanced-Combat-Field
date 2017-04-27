@@ -98,16 +98,17 @@ if (_isTrafficPFH) then
     {
     	{
     		private _car = _x;
+    		private _driver = driver _car;
 
-    		if (!isNull (driver _car) && ((!isPlayer _car) && (alive _car))) then
+    		if (!isNull _driver && !isPlayer _driver && alive _driver) then
     		{
-    			if ((({(isPlayer (driver _x) && alive (driver _x))} count (_car nearEntities ["Car", 70])) > 0) || (({!isNull (driver _x)} count (_car nearEntities ["Car", 150])) > 0)) then
-    			{
-    				(group (driver _car)) setSpeedMode "LIMITED";
-    			} else
-    			{
-    				(group (driver _car)) setSpeedMode "NORMAL";
-    			};
+				if ((count (_car nearEntities ["Man", 70])) > 0 || (count (_car nearEntities ["Car", 150])) > 0) then
+				{
+					(group _driver) setSpeedMode "LIMITED";
+				} else
+				{
+					(group _driver) setSpeedMode "NORMAL";
+				};
     		};
         } forEach vehicles;
     };

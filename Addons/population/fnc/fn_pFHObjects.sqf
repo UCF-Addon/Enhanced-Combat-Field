@@ -32,6 +32,8 @@ if (GMVAR(DOUBLE(par,spawnTimeout)) >= GMVAR(DOUBLE(par,triggerSpawnTimeout))) t
 	_parSpawn = true;
 };
 
+private _startTime = diag_tickTime;
+
 {
 	_center = _x;
 
@@ -40,7 +42,7 @@ if (GMVAR(DOUBLE(par,spawnTimeout)) >= GMVAR(DOUBLE(par,triggerSpawnTimeout))) t
 		{
 			if ((_x getVariable [QGMVAR(isFurnished), _false]) == _false) then
 			{
-				[_center, _x] call DFUNC(spawnFurniture);
+				[_center, _x] spawn DFUNC(spawnFurniture);
 			};
 		} forEach (_center nearObjects ["House", GMVAR(DOUBLE(fur,spawnRadius))]);
 	};
@@ -60,3 +62,9 @@ if (GMVAR(DOUBLE(par,spawnTimeout)) >= GMVAR(DOUBLE(par,triggerSpawnTimeout))) t
 		} forEach (_center nearObjects ["House", GMVAR(DOUBLE(par,spawnRadius))]);
 	};
 } forEach GMVAR(center);
+
+private _stopTime = diag_tickTime;
+if ((_stopTime - _startTime) > 0) then
+{
+	diag_log format ["Objects for Population took %1 ms", (_stopTime - _startTime)];
+};

@@ -26,8 +26,10 @@ if (GMVAR(DOUBLE(car,spawnTimeout)) >= GMVAR(DOUBLE(car,triggerSpawnTimeout))) t
 	_carSpawn = true;
 };
 
+private _startTime = diag_tickTime;
+
+if (_carSpawn) then
 {
-	if (_carSpawn) then
 	{
 		_amount = count ((_x nearEntities ["Car", GMVAR(DOUBLE(car,despawnRadius))]) select { ((_x getVariable [QGMVAR(isAmbient), _false]) == _true) });
 
@@ -36,5 +38,11 @@ if (GMVAR(DOUBLE(car,spawnTimeout)) >= GMVAR(DOUBLE(car,triggerSpawnTimeout))) t
 		{
 			[_x] call DFUNC(spawnTrafficCar);
 		};
-	};
-} forEach GMVAR(center);
+	} forEach GMVAR(center);
+};
+
+private _stopTime = diag_tickTime;
+if ((_stopTime - _startTime) > 0) then
+{
+	diag_log format ["Traffic for Population took %1 ms", (_stopTime - _startTime)];
+};

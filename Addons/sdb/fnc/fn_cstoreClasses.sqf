@@ -2,9 +2,7 @@
 
 params ["_uid", "_classes"];
 
-private ["_index"];
-
-_index = 0;
+private _index = 0;
 {
 
     if ((_x select 0) == _uid) exitWith {};
@@ -13,7 +11,7 @@ _index = 0;
 
 //((GMVAR(cache) select _index) select 1) = [];
 
-_classId = 0;
+private _classId = 0;
 {
     if (_x == 1) then
     {

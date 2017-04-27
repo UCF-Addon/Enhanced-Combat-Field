@@ -22,6 +22,13 @@ private _objects = [_house] call DFUNC(getFurnitureObjects);
 
 if ((count _objects) < 1) exitWith {};
 
+/*
+{
+	GMVAR(furCache) pushBack [_house, _x];
+	nil
+} count _objects;
+*/
+
 {
 	_obj = [_house, _x] call DFUNC(furnish);
 
@@ -29,7 +36,10 @@ if ((count _objects) < 1) exitWith {};
 	{
 		_spawnedObjs pushBack _obj;
 	};
-} forEach _objects;
+	nil
+} count _objects;
 
 _house setVariable [QGMVAR(furniture), _spawnedObjs, false];
 _house setVariable [QGMVAR(isFurnished), _true, false];
+
+diag_log format ["Pushed %1 furniture objects to house %2", (count _objects), _house];

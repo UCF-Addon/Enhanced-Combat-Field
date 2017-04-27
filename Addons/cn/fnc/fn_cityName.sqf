@@ -2,8 +2,8 @@
 
 [] spawn
 {
-    _lastLocation = "";
-    _locationName = "";
+    private _lastLocation = "";
+    private _locationName = "";
     while {true} do
     {
         if(alive player) then

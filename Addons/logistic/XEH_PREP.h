@@ -4,4 +4,6 @@ PREP(doLoadObject);
 PREP(getSuitableZones);
 PREP(inZone);
 PREP(loadObject);
+PREP(registerRespawn);
 PREP(unloadObject);
+PREP(unregisterRespawn);
