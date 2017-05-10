@@ -44,6 +44,7 @@ if (_obj isKindOf "Land_DataTerminal_01_F") then
 			_stage = 1;
 		} else
 		{
+			_stage = 0;
 			hint "Waiting for power plug";
 		};
 	};
@@ -55,6 +56,7 @@ if (_obj isKindOf "Land_DataTerminal_01_F") then
 			_stage = 2;
 		} else
 		{
+			_stage = 1;
 			hint "Wait for physical connection";
 		};
 	};
@@ -66,6 +68,7 @@ if (_obj isKindOf "Land_DataTerminal_01_F") then
 			_stage = 3;
 		} else
 		{
+			_stage = 2;
 			hint "Wait until datacenter is fully started";
 		};
 	};
@@ -78,6 +81,7 @@ if (_obj isKindOf "Land_DataTerminal_01_F") then
 			[_obj, "blue", "blue", "blue"] call BIS_fnc_DataTerminalColor;
 		} else
 		{
+			_stage = 3;
 			hint "Could not fetch a data tunnel over wireless network";
 		};
 	};
