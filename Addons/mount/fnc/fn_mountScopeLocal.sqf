@@ -32,8 +32,8 @@ if ((currentWeapon _unit) == (handgunWeapon _unit)) then
 
 if (_mount) then
 {
-    [_unit, _weaponIndex, 1, _scope] call DFUNC(mount);
+    [_unit, _weaponIndex, 1, _scope] spawn DFUNC(mount);
 } else
 {
-    [_unit, _weaponIndex, 1, _scope] call DFUNC(dismount);
+    [_unit, _weaponIndex, 1, _scope] spawn DFUNC(dismount);
 };

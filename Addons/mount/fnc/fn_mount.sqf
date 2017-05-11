@@ -29,7 +29,7 @@ switch (_attIndex) do
 	case 3 : { _anim = ["MountSide", 6, 3]; }; // Bipod Slot
 };
 
-if (_anim == []) exitWith {};
+if (_anim isEqualTo []) exitWith {};
 
 _unit playMoveNow (_anim select 0);
 sleep (_anim select 1);
