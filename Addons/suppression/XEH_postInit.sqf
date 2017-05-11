@@ -25,3 +25,13 @@ if ((isMultiplayer && isServer) || (!isMultiplayer)) then
 	GMVAR(__pFHBullet) = [DFUNC(pFHBullet), 0, []] call CBA_fnc_addPerFrameHandler;
 	GMVAR(__pFHUnit) = [DFUNC(pFHUnits), 0, []] call CBA_fnc_addPerFrameHandler;
 };
+
+if (hasInterface) then
+{
+	GMVAR(DOUBLE(PP,dist)) = ppEffectCreate ["DynamicBlur", SUPP_PP_DIST_ID];
+	GMVAR(DOUBLE(PP,dist)) ppEffectForceInNVG false;
+	GMVAR(DOUBLE(PP,dist)) ppEffectAdjust [0];
+	GMVAR(DOUBLE(PP,dist)) ppEffectCommit 0;
+
+	//GMVAR(pFHBulletIn) = [DFUNC(pFHBulletIn), 0, []] call CBA_fnc_addPerFrameHandler;
+};

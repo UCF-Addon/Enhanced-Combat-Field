@@ -1,3 +1,1 @@
-#define COMPONENT grenade
-
-#include "\u\ecf\addons\grenade\script_component.h"
+#include "\u\ecf\addons\gas\script_component.h"

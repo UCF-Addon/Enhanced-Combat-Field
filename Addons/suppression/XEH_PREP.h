@@ -1,9 +1,12 @@
+PREP(applyDistortion);
 PREP(decSkill);
 PREP(effectStance);
 PREP(getCover);
+PREP(handleDistortion);
 PREP(handleFired);
 PREP(initUnit);
 PREP(pFHBullet);
+PREP(pFHBulletIn);
 PREP(pFHUnits);
 PREP(resetCover);
 PREP(resetSkill);

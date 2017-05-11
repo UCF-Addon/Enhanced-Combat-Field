@@ -11,9 +11,12 @@ GMVAR(bulletPos) = [];
 
 // Debug //if (GMVAR(__nextFrame) > diag_tickTime) exitWith { true };
 
+/* Debug */
+#ifdef ECF_DEBUG
 _start = diag_tickTime;
-// Debug //_skip = (_start - GMVAR(__lastFrame)) / 50;
 _skip = 1;
+/* !Debug */
+#endif
 
 {
     if (!isNull _x && alive _x && !isPlayer _x) then
@@ -91,6 +94,8 @@ _skip = 1;
     };
 } forEach allUnits - entities "HeadlessClient_F";
 
+/* Debug */
+#ifdef ECF_DEBUG
 _stop = diag_tickTime;
 
 if (isNil QGMVAR(debugTimer)) then
@@ -106,11 +111,10 @@ if ((count GMVAR(debugTimer)) >= 250) then
 		_sum = _sum + _x;
 	} forEach GMVAR(debugTimer);
 
-	// Debug //systemChat format ["pFH ( Units ): ~ %1ms = %2FPS", (_sum / 250), (_sum / 250 / 20)];
 	diag_log format ["pFH ( Units ): ~ %1ms = %2FPS", (_sum / 250), (_sum / 250 / 20)];
 	GMVAR(debugTimer) = [];
 };
-// Debug //GMVAR(__lastFrame) = _stop;
-// Debug //GMVAR(__nextFrame) = _stop + (NEXT_TICK - (80 min (_stop - _start)));
+/* !Debug */
+#endif
 
 true

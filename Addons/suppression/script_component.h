@@ -4,3 +4,5 @@
 
 // (1000 / 50) * (50 / 10) only 10 times a second
 #define NEXT_TICK 100
+
+#define SUPP_PP_DIST_ID 6012
